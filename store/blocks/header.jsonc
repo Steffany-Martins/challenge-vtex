@@ -14,7 +14,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#desktop", "flex-layout.row#tab"]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -22,12 +22,14 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "mainMenu"
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
+      "flex-layout.col#spacer",
       "locale-switcher",
       "login",
       "minicart.v2"
@@ -46,10 +48,10 @@
   },
   "logo": {
     "props": {
-      "title": "Logo",
+      "title": "logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://i.ibb.co/gTK5Vzj/upmedal.png",
+      "width": "100"
     }
   },
   "header-layout.mobile": {
@@ -64,15 +66,113 @@
       "logo",
       "flex-layout.col#spacer",
       "login",
-      "minicart.v2"
+      "minicart.v2",
+      "tab-layout#home"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "main-menu",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
+  // barra de pesquisa
+  "search-bar": {
+    "props": {
+      "displayMode": "clear-button",
+      "blockClass": "search-input"
+    }
+  },
+  "flex-layout.row#tab": {
+    "props": {
+      "blockClass": "main-menu-tab",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": ["tab-layout#home"]
+  },
+  // tab menu
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+"tab-list#home": {
+  "props": {
+    "blockClass":"text-custom"
+  },
+  "children": [
+    "tab-list.item#home1",
+    "tab-list.item#home2",
+    "tab-list.item#home3",
+    "tab-list.item#home4",
+    "tab-list.item#home5",
+    "tab-list.item#home6",
+    "tab-list.item#home7",
+    "tab-list.item#home8",
+    "tab-list.item#home9"
+  ]
+},
+"tab-list.item#home1": {
+  "props": {
+    "tabId": "item1",
+    "label": "Promoção",
+    "defaultActiveTab": true
+  }
+},
+"tab-list.item#home2": {
+  "props": {
+    "tabId": "item2",
+    "label": "Corinthians"
+  }
+},
+"tab-list.item#home3": {
+  "props": {
+    "tabId": "item3",
+    "label": "Palmeiras"
+  }
+},
+"tab-list.item#home4": {
+  "props": {
+    "tabId": "item4",
+    "label": "Divertidos"
+  }
+},
+"tab-list.item#home5": {
+  "props": {
+    "tabId": "item5",
+    "label": "7 Maravilhas"
+  }
+},
+"tab-list.item#home6": {
+  "props": {
+    "tabId": "item2",
+    "label": "Guerreiros"
+  }
+},
+"tab-list.item#home7": {
+  "props": {
+    "tabId": "item2",
+    "label": "Álbum 1"
+  }
+},
+"tab-list.item#home8": {
+  "props": {
+    "tabId": "item2",
+    "label": "Álbum 2"
+  }
+},
+"tab-list.item#home9": {
+  "props": {
+    "tabId": "item2",
+    "label": "Álbum 3"
+  }
+},
   "drawer": {
     "children": []
   }

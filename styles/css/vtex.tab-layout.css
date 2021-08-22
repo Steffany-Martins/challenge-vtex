@@ -1,0 +1,4 @@
+.listItem :global(.vtex-button__label) {
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}

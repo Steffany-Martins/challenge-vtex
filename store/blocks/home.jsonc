@@ -1,15 +1,59 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "flex-layout.row#home"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "flex-layout.row#home": {
+    "props": {
+      "blockClass": "main-home-slider",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#home-slider"
+    ]
+  },
+  "flex-layout.col#home-slider": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "col-carousel",
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      "verticalAlign": "center",
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": ["slider-layout#home"]
+  },
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "stopOnHover": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "arrowSize": "24"
+    },
+    "children": ["image#1", "image#2"]
+  },
+    "image#1": {
+      "props": {
+        "width": "100%",
+        "src":"https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T225608Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=28dd22208adb70e31109fe74ecdff681622b3dd1400947ff286662596c2994d7"
+      }
+    },
+    "image#2": {
+      "props": {
+        "width": "100%",
+        "src":"https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T225639Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3b8ba4982afe4aa4c7c078ee987b9d6563f643793cceb41c673d0c652258673f"
+      }
     }
-  }
 }

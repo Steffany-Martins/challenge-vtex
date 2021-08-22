@@ -1,0 +1,11 @@
+.flexRowContent--mainMenu {
+  background-color: black;
+}
+
+.flexRowContent--main-menu-tab{
+  background-color: rgb(26, 25, 25);
+}
+
+.flexColChild--col-carousel{
+  width: 100%;
+}
