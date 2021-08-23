@@ -4,7 +4,8 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer",
+      "vtex.menu@2.x:menu#footermenu"
     ]
   },
   "footer-layout.mobile": { 
@@ -21,6 +22,25 @@
     "props": {
       "width": 100,
       "src": "https://i.ibb.co/gTK5Vzj/upmedal.png"
+    }
+  },
+  "vtex.menu@2.x:menu#footermenu": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://api.whatsapp.com/send?phone=5511981856955&text=Bem%20Vindo%20a%20UpMedal%2C%20Qual%20a%20sua%20d%C3%BAvida%3F",
+            "noFollow": false,
+            "tagTitle": "Suporte",
+            "text": "Suporte"
+          }
+        }
+      ]
     }
   }
 }

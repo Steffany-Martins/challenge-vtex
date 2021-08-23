@@ -4,6 +4,9 @@
 
 .flexRowContent--main-menu-tab{
   background-color: rgb(26, 25, 25);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .flexColChild--col-carousel{

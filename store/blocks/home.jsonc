@@ -55,5 +55,56 @@
         "width": "100%",
         "src":"https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T225639Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3b8ba4982afe4aa4c7c078ee987b9d6563f643793cceb41c673d0c652258673f"
       }
+    },
+    "search-result-layout.customQuery#promocao": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "UpMedal",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+        }
+      },
+      "blocks": [
+        "search-result-layout.desktop",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
+    },
+    "search-result-layout.customQuery#corinthians": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "corinthians",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+        }
+      },
+      "blocks": [
+        "search-result-layout.desktop",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
+    },
+    "search-result-layout.customQuery#palmeiras": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByBestDiscountDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "palmeiras",
+          "mapField": "ft",
+          "skusFilter": "ALL_AVAILABLE"
+        }
+      },
+      "blocks": [
+        "search-result-layout.desktop",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
     }
 }

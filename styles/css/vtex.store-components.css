@@ -10,3 +10,8 @@
   height: 90%;
   border-radius: 20px;
 }
+
+.listItemActive :global(.vtex-button__label) {
+  color: #59ff00;
+  background-color: black !important;
+}

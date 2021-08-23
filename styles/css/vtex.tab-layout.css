@@ -1,3 +1,16 @@
+.listItem :global(.vtex-button):visited {
+  color: #59ff00;
+  background-color: black;
+}
+.listItemActive :global(.vtex-button):hover {
+  background-color: #000;
+}
+.listItemActive :global(.vtex-button__label):hover {
+  color: #59ff00;
+}
+.listItemActive :global(.vtex-button__label):hover {
+  color: #59ff00;
+}
 .listItem :global(.vtex-button__label) {
   color: white;
   font-family:Arial, Helvetica, sans-serif;
